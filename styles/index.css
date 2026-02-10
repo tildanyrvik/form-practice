@@ -54,8 +54,10 @@ body {
     letter-spacing: 10%;
     border-radius: 10px;
     background-color: #581369;
+    border: none;
     color:#FBDBFF;
     align-self: center;
+    cursor: pointer;
 }
 
 .drop-down{
@@ -73,4 +75,9 @@ body {
     border-color: #0C195C;
     border-style:dotted;
     border-width: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #581369;
+    transform:scale(1.1);
 }
