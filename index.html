@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duck form</Form></title>
+    <title>Customer Form</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="styles/index.css" rel="stylesheet">
@@ -18,23 +18,27 @@
     
         <form class="full-form">
                     <h1 class="h1">Customer Form</h1>
-                    <label class="label">Full Name</label>
-                    <input type="text" placeholder="Enter your name" class="placeholder">
+                    <label for="name" class="label">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" class="placeholder" required autofocus>
 
-                    <label class="label">Email Address</label>
-                    <input type="email" placeholder="Enter your email" class="placeholder">
+                    <label for="email" class="label">Email Address</label required>
+                    <input type="email" id="email" placeholder="Enter your email" class="placeholder">
 
-                    <label class="label">Message Regarding</label>
-                    <select name="Message Regarding" id="select">
+                    <label for="select" class="label">Message Regarding</label>
+                    <select name="Message Regarding" id="select" class="drop-down">
                     <option value="Account issues" class="option">Account issues</option>
                     <option value="Update details" class="option">Update details</option>
                     <option value="General queries" class="option">General queries</option>
                     </select>
 
-                    <label class="label">Message</label>
-                    <textarea name="Message" id="" cols="15" rows="3" placeholder="Enter your message" class="placeholder"></textarea>
+                    <label for="message" class="label" required>Message</label>
+                    <textarea name="Message" id="message" cols="15" rows="3" placeholder="Enter your message" 
+                    class="placeholder" required maxlength="150"></textarea>
 
-                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="submit" class="submit-btn" disabled>Submit</button>
+
+                    <input type="checkbox" checked> <label class="label">I'd like to receive company updates via email.</label>
+
         
         </form>
 
